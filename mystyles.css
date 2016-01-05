@@ -1,0 +1,19 @@
+
+/*
+  I've defined two styles here .font-prototype-style-1
+  So, whenever you want to assign a different font-family (or font-size or colour or whatever)
+  just add a style rule here.
+  You'll then need to go into Chrome://extensions and reload this to get the changes.
+  These styles are only applied on pages beginning https://next.ft.com
+
+*/
+
+.font-prototype-style-1 .n-card__headline,
+.font-prototype-style-1 .n-card__subheading,
+.font-prototype-style-1 .n-card__brand,
+.font-prototype-style-1 .article__body,
+.font-prototype-style-1 .article__title,
+.font-prototype-style-1 .article__stand-first
+{
+  font-family: georgia;
+}
