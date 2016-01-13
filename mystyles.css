@@ -8,12 +8,125 @@
 
 */
 
-.font-prototype-style-1 .n-card__headline,
-.font-prototype-style-1 .n-card__subheading,
-.font-prototype-style-1 .n-card__brand,
-.font-prototype-style-1 .article__body,
-.font-prototype-style-1 .article__title,
-.font-prototype-style-1 .article__stand-first
+/*
+
+style 1,
+financier display reg,
+financier text reg,
+financier text italic,
+financier text bold,
+financier text bold italic
+
+system font for sans
+*/
+
+/* reset financiers */
+.article-big-number__title,
+.article-big-number__content,
+.article__body,
+.article__stand-first,
+.article__title,
+.header__name,
+.n-card__brand,
+.n-card__headline,
+.n-card__subheading,
+.pod__item__headline,
+.story-card__summary,
+h1
 {
-  font-family: georgia;
+  font-family: cursive !important;
+}
+
+/* reset metrics */
+.article__byline,
+.article__tag>a,
+.article__tags__title,
+.article__timestamp,
+.article-image__caption,
+.article-tags__product-tour--link,
+.edition-switcher,
+.c-topic,
+#fastft article h2,
+#fastft article time,
+.feed article time,
+.feed article h2,
+.header__link,
+.markets-data__item__change,
+.markets-data__item__name,
+.markets-data__link,
+.n-myft-ui__button,
+.n-welcome__btn,
+.n-welcome,
+.n-welcome__intro,
+.pod__item__subheading,
+.pod__item__time,
+.pod-heading--link,
+.story-card__footer,
+.story-card__taxon,
+.story-card__link,
+html{
+  font-family: cursive !important;
+}
+
+/* legacy (benton) */
+#comments {
+  display:none;
+}
+
+/* financier display reg */
+.article__title,
+.story-card__title a{
+  /*font-family: FinancierDisplayWeb, serif !important;*/
+}
+
+/* financier display bold */
+.c-topic {
+  /*font-family: FinancierDisplayWeb, serif !important;
+  font-weight: 500;*/
+}
+
+/* financier text reg */
+.article__body {
+/*  font-family: georgia, serif !important;
+  font-weight: 400;*/
+}
+
+.style-1 .article__body {
+  /*font-family: FinancierTextWeb, serif !important;
+  font-weight: 400;*/
+}
+
+/* financier text italic */
+.article__stand-first {
+/*  font-family: FinancierTextWeb, serif !important;
+  font-weight: 400;
+  font-style: italic;*/
+}
+
+@font-face {
+  font-family: 'FinancierTextWeb';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/FinancierText-Bold.woff');
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: 'FinancierTextWeb';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/FinancierText-BoldItalic.woff');
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* financier text bold */
+.pod__item__subheading {
+  font-family: FinancierTextWeb, monospace !important;
+  font-weight: bold !important;
+}
+
+/* financier text bold italic */
+.pod__item__time {
+  font-family: FinancierTextWeb, monospace !important;
+  font-weight: bold !important;
+  font-style: italic !important;
 }

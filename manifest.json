@@ -17,6 +17,9 @@
      "js": ["myscript.js"]
    }
  ],
+ "web_accessible_resources":[
+    "fonts/*"
+ ],
  "permissions": [
     "storage"
   ]
